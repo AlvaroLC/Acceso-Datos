@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.alvarolc.aad_playground.R
+import com.alvarolc.aad_playground.commons.GsonSerializer
 
 /**
  * Actividad que me permite ejecutar una fuente de datos en concreto según el botón pulsado.
