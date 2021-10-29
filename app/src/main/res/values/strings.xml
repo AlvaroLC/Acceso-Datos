@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AAD-PlayGround</string>
+    <string name="action_file">Repositorio Ficheros</string>
+    <string name="action_mem">Repositorio Memoria</string>
+    <string name="action_shapref">Repositorio SharedPreferences</string>
+
+    <!-- Shared Preferences Keys -->
+    <string name="preference_file_key">ut02_shared_pref</string>
+    <string name="preference_file_exercise02">ut02_exercise02</string>
+    <string name="preference_encrypt_file_key">ut02_shared_pref_encrypt</string>
 </resources>
