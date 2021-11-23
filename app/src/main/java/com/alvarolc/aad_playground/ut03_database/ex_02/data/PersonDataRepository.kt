@@ -9,7 +9,7 @@ class PersonDataRepository(private val personLocalSource: PersonLocalSource) : P
         personLocalSource.save(personModel)
     }
 
-    override fun getPersonAndPetsAndCarsAndJobs(): List<PersonModel> {
+    override suspend fun getPersonAndPetsAndCarsAndJobs(): List<PersonModel> {
         return personLocalSource.findPersonAndPetAndCarsAndJobs()
     }
 

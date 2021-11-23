@@ -31,10 +31,10 @@ class PersonLocalSource(applicationContext: Context) {
         return personAndPetsAndCars?.map { element -> element.toModel() } ?: mutableListOf()
     }*/
 
-fun findPersonAndPetAndCarsAndJobs(): List<PersonModel>{
-    val personAndPetsAndCarsAndJobs = db.personDao().getPersonAndPetsAndCarsAndJobs()
-    return personAndPetsAndCarsAndJobs.map { element -> element.toModel() } ?: mutableListOf()
-}
+    fun findPersonAndPetAndCarsAndJobs(): List<PersonModel>{
+        val personAndPetsAndCarsAndJobs = db.personDao().getPersonAndPetsAndCarsAndJobs()
+        return personAndPetsAndCarsAndJobs.map { element -> element.toModel() } ?: mutableListOf()
+    }
 
 
     fun save(personModel: PersonModel) {

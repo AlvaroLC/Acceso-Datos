@@ -9,5 +9,5 @@ interface PersonRepository {
     //fun fetchAll(): List<PersonModel>
     //fun getPersonAndPet(): List<PersonModel>
     //fun getPersonAndPetAndCars(): List<PersonModel>
-    fun getPersonAndPetsAndCarsAndJobs(): List<PersonModel>
+    suspend fun getPersonAndPetsAndCarsAndJobs(): List<PersonModel>
 }
