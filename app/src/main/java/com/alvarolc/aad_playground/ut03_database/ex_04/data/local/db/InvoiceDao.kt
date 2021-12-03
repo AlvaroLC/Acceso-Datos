@@ -20,5 +20,4 @@ interface InvoiceDao {
     @Transaction
     @Query("SELECT * FROM invoice")
     fun getInvoiceAndInvoiceLines(): List<InvoiceAndInvoiceLines>?
-
 }

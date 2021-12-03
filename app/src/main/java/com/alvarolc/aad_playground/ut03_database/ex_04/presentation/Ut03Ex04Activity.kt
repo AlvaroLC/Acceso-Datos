@@ -17,7 +17,6 @@ class Ut03Ex04Activity : AppCompatActivity() {
         CustomerDataRepository(CustomerLocalSource(applicationContext))
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_example02)

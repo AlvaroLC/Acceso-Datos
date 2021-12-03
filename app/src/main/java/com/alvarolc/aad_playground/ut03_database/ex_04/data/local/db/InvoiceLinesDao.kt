@@ -16,7 +16,6 @@ interface InvoiceLinesDao {
     @Insert
     fun insertInvoiceLinesAndProduct(invoiceLinesEntity: InvoiceLinesEntity, productEntity: ProductEntity)
 
-
     @Transaction
     @Query("SELECT * FROM invoice")
     fun getInvoiceLinesAndProduct(): List<InvoiceLinesAndProduct>?

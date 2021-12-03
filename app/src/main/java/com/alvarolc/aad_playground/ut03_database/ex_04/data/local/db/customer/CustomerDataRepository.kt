@@ -20,5 +20,4 @@ class CustomerDataRepository(private val customerLocalSource: CustomerLocalSourc
     }
 
     override fun fetchAll(): List<CustomerModel> = customerLocalSource.findAll()
-
 }

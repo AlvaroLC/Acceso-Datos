@@ -126,5 +126,6 @@ data class InvoiceAndInvoiceLines(
         entityColumn = "invoice_id" //clave foránea de la entidad InvoiceLines.
     ) val invoiceLinesEntity: InvoiceLinesEntity, //Entidad que recibe la clave de otra entidad
 
+
 )
 

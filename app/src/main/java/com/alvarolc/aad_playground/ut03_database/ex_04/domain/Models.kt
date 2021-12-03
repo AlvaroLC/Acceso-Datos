@@ -20,6 +20,7 @@ data class InvoiceLinesModel(
     val product: ProductModel
 )
 
+
 data class InvoiceModel(
     val id: Int,
     val date: Date,

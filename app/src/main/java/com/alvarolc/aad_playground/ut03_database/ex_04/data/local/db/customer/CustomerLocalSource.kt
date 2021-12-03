@@ -16,7 +16,6 @@ class CustomerLocalSource(applicationContext: Context) {
             Thread.sleep(1000)
         }
 
-
         fun save(customerModel: CustomerModel) {
             db.customerDao().insert(CustomerEntity.toEntity(customerModel))
         }

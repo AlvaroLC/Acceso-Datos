@@ -7,4 +7,5 @@ interface CustomerRepository {
     fun delete(customerModel: CustomerModel)
     fun update(customerModel: CustomerModel)
     fun fetchAll(): List<CustomerModel>
+
 }

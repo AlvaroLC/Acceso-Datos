@@ -33,5 +33,4 @@ class ProductLocalSource(applicationContext: Context) {
         db.productDao().update(ProductEntity.toEntity(productModel))
     }
 
-
 }
