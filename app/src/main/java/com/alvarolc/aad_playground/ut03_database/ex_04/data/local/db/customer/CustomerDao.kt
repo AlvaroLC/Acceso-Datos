@@ -16,4 +16,5 @@ interface CustomerDao {
 
     @Update
     fun update(customerEntity: CustomerEntity)
+
 }

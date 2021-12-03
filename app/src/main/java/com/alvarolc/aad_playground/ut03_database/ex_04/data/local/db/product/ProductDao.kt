@@ -16,4 +16,5 @@ interface ProductDao {
 
     @Update
     fun update(productEntity: ProductEntity)
+
 }

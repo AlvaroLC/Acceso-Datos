@@ -19,4 +19,5 @@ interface InvoiceLinesDao {
     @Transaction
     @Query("SELECT * FROM invoice")
     fun getInvoiceLinesAndProduct(): List<InvoiceLinesAndProduct>?
+
 }

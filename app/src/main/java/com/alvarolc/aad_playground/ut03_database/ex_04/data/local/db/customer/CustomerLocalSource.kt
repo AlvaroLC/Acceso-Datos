@@ -32,4 +32,5 @@ class CustomerLocalSource(applicationContext: Context) {
     fun update(customerModel: CustomerModel){
         db.customerDao().update(CustomerEntity.toEntity(customerModel))
     }
+
 }

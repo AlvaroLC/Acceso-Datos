@@ -23,7 +23,6 @@ abstract class Ut03Ex04DataBase : RoomDatabase() {
     abstract fun customerDao(): CustomerDao
     abstract fun productDao(): ProductDao
 
-
     /**
      * Necesitamos crear una única instancia de la base de datos. Esto es así porque es muy
      * constoso en recursos de memoria usar varias instancias.

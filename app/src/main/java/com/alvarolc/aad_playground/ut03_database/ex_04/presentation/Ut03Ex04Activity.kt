@@ -12,7 +12,6 @@ import com.alvarolc.aad_playground.ut03_database.ex_04.domain.CustomerRepository
 
 class Ut03Ex04Activity : AppCompatActivity() {
 
-
     private val repository: CustomerRepository by lazy {
         CustomerDataRepository(CustomerLocalSource(applicationContext))
     }
