@@ -11,6 +11,9 @@
         android:theme="@style/Theme.AADPlayGround">
         <activity
             android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".UT_02.exercise02.Exercise02Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
