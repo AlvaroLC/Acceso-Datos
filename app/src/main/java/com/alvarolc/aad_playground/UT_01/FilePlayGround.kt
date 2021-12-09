@@ -2,7 +2,12 @@ package com.alvarolc.aad_playground.UT_01
 
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.io.path.Path
 import java.io.File
+import kotlin.io.path.createDirectory
+import kotlin.io.path.deleteIfExists
+import kotlin.io.path.exists
+
 
 class FilePlayGround (private val activity: AppCompatActivity){
 
@@ -17,6 +22,7 @@ class FilePlayGround (private val activity: AppCompatActivity){
         //appendTextWithNewLine()
         //readLineByLine()
         //deleteFiles()
+        createFolder()
     }
 
     fun createFile(){
@@ -107,6 +113,18 @@ class FilePlayGround (private val activity: AppCompatActivity){
             colorsReturn.add(it)
         }
         return colorsReturn
+    }
+
+    //Funcion para crear carpetas
+
+    fun createFolder(){
+        val file = File(activity.filesDir, "/docs")
+        file.mkdir()
+    }
+
+    fun createFileFolder(){
+        val file = File(activity.filesDir.canonicalPath, "/documents/aad.txt")
+        file.writeText("Hola!!")
     }
 
 }
